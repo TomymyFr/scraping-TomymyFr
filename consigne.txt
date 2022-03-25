@@ -1,0 +1,134 @@
+Exercice: 
+Allez sur l'url: https://fbref.com/fr/equipes/361ca564/Statistiques-Tottenham-Hotspur
+Parser les 3 tableaux suivants: 
+	Statistiques basiques 2021-2022 Tottenham Hotspur: Premier League
+	Calendrier et résultats 2021-2022 Tottenham Hotspur: Toutes les compétitions
+	Tirs 2021-2022 Tottenham Hotspur: Premier League
+
+L'objectif est de return 3 variables (data_stats, data_calendar, et data_tirs) qui contiennent chacune une liste contenant:
+	le nom du tableau (string) LE NOM DOIT AVOIR ETE SCRAPE --> PAS JUSTE UN STRING,
+	la data du tableau (liste),
+
+La liste va suivre le présent modèle:
+	
+
+data_stats = 
+"Statistiques basiques 2021-2022 Tottenham Hotspur: Premier League",
+[
+    {
+        "Joueur": {
+            "Nom": "Hugo Lloris",
+            "Nation": "FR",
+            "POS": "GB",
+            "Age": "35-089"
+        },
+        "Temps de jeu": {
+            "MJ": 29,
+            "Titulaire": 29,
+            "Min": 2.610,
+            "90": 29.0
+        },
+        "Performance": {
+            "Buts": 0,
+            "PD": 0,
+            "B-PénM": 0,
+            "PénM": 0,
+            "PénT": 0,
+            "CJ": 1,
+            "CR": 0
+        },
+        "Par 90 minutes (1)": {
+            "Buts": 0.00,
+            "PD": 0.00,
+            "B+PD": 0.00,
+            "B-PénM": 0.00,
+            "B+PD-PénM": 0.00
+        },
+        "Attendu": {
+            "xG": 0.0,
+            "npxG": 0.00,
+            "xA": 0.5,
+            "npxG+xA": 0.5
+        },
+        "Par 90 minutes (2)": {
+            "xG": 0.0,
+            "xA": 0.02,
+            "xG+xA": 0.02,
+            "npxG": 0.00,
+            "npxG+xA": 0.2
+        },
+        "Matchs": "fr/joueurs/8f62b6ee/matchs/2021-2022/summary/Journaux-de-match-Hugo-Lloris"
+        }
+
+        # ...
+    ]
+
+    data_calendar = 
+    "Calendrier et résultats 2021-2022 Tottenham Hotspur: Toutes les compétitions",
+    [
+        {
+            "date": "2021-08-15",
+            "heure": "16h30 (17h30)",
+            "comp": "Premier League (lien)",
+            "Tour": "Journée 1 (lien)",
+            "Jour": "Dim",
+            "Tribune": "Domicile",
+            "Résultat": "V",
+            "BM": 1,
+            "BE": 0,
+            "Adversaire": "Manchester City (lien)",
+            "xG": 1.3,
+            "xGA": 1.9,
+            "Poss": 36,
+            "Affluence": 58.262,
+            "Capitaine": "Hugo Lloris",
+            "Formation": "4-3-3",
+            "Arbitre": "Anthony Taylor",
+            "Rapport": "(lien)"
+
+    }
+
+    # ...
+]
+
+data_tirs = 
+"Tirs 2021-2022 Tottenham Hotspur: Premier League",
+[
+    {
+        "Joueur": "Hugo Lloris (lien)",
+        "Nation": "FRA (lien)",
+        "Pos": "GB",
+        "Age": "35-089",
+        "90": 29.0,
+        "Standard": {
+            "Buts": 0,
+            "Tirs": 0,
+            "TC": 0,
+            "TC %": "",
+            "Tir/90": 0,
+            "TC/90": 0.00,
+            "B/Tir": "",
+            "B/TC": "",
+            "Dist": "",
+            "CF": 0,
+            "PénM": 0,
+            "PénT": 0,
+        },
+        "Attendu": {
+            "xG": 0.0,
+            "npxG": 0.0,
+            "npxG/Sh": "",
+            "G-xG": 0.0,
+            "np:G-xG": 0.0
+        },
+        "Match": "(lien)"
+    }
+
+    # ...
+]
+
+
+
+La deadline est fixée à 22H30 le 25/03/2022.
+Envoyez un lien vers un repo github qui contiens UN SCRIPT python (ou bien envoyez votre code dans un fichier .txt) sur mon adresse
+
